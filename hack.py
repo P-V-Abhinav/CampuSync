@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import replicate
+
 
 # Student Authentication
 def student_login():
@@ -214,14 +214,6 @@ def calculate_attendance(user_id, tech_fest_days=0):
     
     leaves_remaining = max_allowed_leaves - user['leaves_taken']
     return current_percentage, leaves_remaining, user['chances_used']
-
-# Generate LLM response using Replicate
-def generate_llm_response(prompt):
-    response = replicate.run(
-        "meta/llama-2-7b-chat",  # Replace with your preferred model
-        input={"prompt": prompt}
-    )
-    return "".join(response)
 
 def attendance_management(user_id):
     st.write("## 📅 Attendance Management")
