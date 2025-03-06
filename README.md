@@ -4,6 +4,8 @@ For the Hackathon made a robust platform to ease all student related affairs.
 
 # CampuSync🎯
 
+Link to website: https://campusync-3.streamlit.app/
+
 
 ## Basic Details
 ### Team Name: SICOSTA
