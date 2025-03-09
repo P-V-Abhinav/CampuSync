@@ -345,7 +345,7 @@ def main():
     if user_type == "Student":
         user_id = student_login()
         if user_id:
-            section = st.sidebar.radio("Select Section", ["Attendance Management", "Canteen Management", "Hostel Listings", "Marketplace", "Your Requests"])
+            section = st.sidebar.radio("Select Section", ["Exam.AI", "Attendance Management", "Canteen Management", "Hostel Listings", "Marketplace", "Your Requests"])
 
             if section == "Attendance Management":
                 attendance_management(user_id)
